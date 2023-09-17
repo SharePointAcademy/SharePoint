@@ -1,0 +1,20 @@
+0x7ffffffffffff		Administrador
+0x1b03c431aef		Editar
+0x1b03c4312ef		Colaboração
+0xb008431041		Somente visualizar
+
+
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "button",
+  "txtContent": "Obter aprovação",
+  "customRowAction": {
+    "action": "executeFlow",
+    "actionParams": "{\"id\": \"f8d24aa6-7306-4f0c-8425-80043dc91794\"}"
+  },
+  "style": {
+    "visibility": "=if([$PermMask]<='0x1b03c4312ef','hidden','visible')",
+    "background-color": "black",
+    "color": "white"
+  }
+}
